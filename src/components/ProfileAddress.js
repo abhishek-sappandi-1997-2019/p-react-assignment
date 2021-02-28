@@ -57,7 +57,7 @@ class ProfileAddress extends Component {
                     { 
                         this.state.location ? 
                         <>
-                            <img alt='profile image' src={this.state.location} style={{ width:'60%', height:'10%' }}/>
+                            <img alt='profile' src={this.state.location} style={{ width:'60%', height:'10%' }}/>
                             <p className='grey'>
                                 Lat:<b className='black'>{this.props.data.address.geo.lat}</b>{" "}
                                 Long:<b className='black'>{this.props.data.address.geo.lng}</b>
