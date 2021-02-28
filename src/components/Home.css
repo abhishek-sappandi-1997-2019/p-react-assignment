@@ -1,0 +1,14 @@
+.root{
+    width: 475px;
+    margin: auto;
+}
+#wrapper {
+    display: flex;
+    float: left;
+}
+.grey{
+    color: grey;
+}
+.black{
+    color: black;
+}
