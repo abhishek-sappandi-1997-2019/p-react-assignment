@@ -14,7 +14,7 @@ class ProfileAddress extends Component {
      * get the map url based on the latitude and longitude
      */
     findLocation = () =>{
-        axios.get(`http://www.mapquestapi.com/geocoding/v1/reverse?key=FBf8pJOA8s6wadHEUxWe5Rnvcb2sr4bv&location=${this.props.data.address.geo.lat},${this.props.data.address.geo.lng}&includeRoadMetadata=true&includeNearestIntersection=true`)
+        axios.get(`https://www.mapquestapi.com/geocoding/v1/reverse?key=FBf8pJOA8s6wadHEUxWe5Rnvcb2sr4bv&location=${this.props.data.address.geo.lat},${this.props.data.address.geo.lng}&includeRoadMetadata=true&includeNearestIntersection=true`)
         .then((response)=>{
           const data = response.data
            this.setState({ location : data.results[0].locations[0].mapUrl}) 
