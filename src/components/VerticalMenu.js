@@ -97,7 +97,7 @@ function VerticalMenu(props) {
   );
 }
 const mapStateToPrps = (state,props) =>{
-  const userid = props.history.location.pathname.slice(6)  // 9
+  const userid = props.history.location.pathname.slice(props.history.location.pathname.length - 1)  // 9
   //console.log("userid",props.history.location.pathname);
   return {
       user : state.user.find(e => Number(e.id) === Number(userid))

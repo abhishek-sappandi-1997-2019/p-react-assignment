@@ -59,7 +59,7 @@ class Profile extends Component {
     }
 }
 const mapStateToPrps = (state,props) =>{
-    const userid = props.history.location.pathname.slice(6) // 9
+    const userid = props.history.location.pathname.slice(props.history.location.pathname.length - 1) // 9
     //console.log("profile",userid);
     return {
         // filtering the selected user
